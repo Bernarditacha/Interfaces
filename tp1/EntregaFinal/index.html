@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Trabajo practico 1</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <nav class="btn-group navegador" role="group" aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-secondary ejercicioUno">Ejercicio 1 </button>
+      <button type="button" class="btn btn-secondary ejercicioDos">Ejercicio 2 </button>
+      <button type="button" class="btn btn-secondary ejercicioTres">Ejercicio 3 </button>
+      <button type="button" class="btn btn-secondary ejercicioCuatro">Ejercicio 4 </button>
+      <button type="button" class="btn btn-secondary ejercicioCinco">Ejercicio 5 </button>
+      <button type="button" class="btn btn-secondary ejercicioSeis">Ejercicio 6 </button>
+    </nav>
+
+    <div class="cnvs">
+      <canvas id="canvas" width="500" height="500" style="border:#000 solid 1px"></canvas>
+    </div>
+
+    <div hidden class="elementos">
+      <button type="button" class="btn btn-secondary aplicarFiltro" name="button"> Aplicar filtro</button>
+      <button type="button" class="btn btn-secondary sacarFiltro" name="button"> Sacar filtro</button>
+    </div>
+    <div class="informacion">
+      <div hidden class="informacion1">
+        <h2>"Repaso Javascript"</h2>
+        <h3>(Ver en consola, Ctrl+f12)</h3>
+        <p>Definir una matriz de 100 elementos x 100 elementos y completarla con valores enteros random</p>
+        <p>a. Escribir una función que retorne el valor máximo de toda la matriz</p>
+        <p>b. escribir una función que retorne el valor máximo contenido en las filas pares y el valor mínimo en las filas impares</p>
+        <p>c. calcular el valor promedio de cada fila y guardarlos en un arreglo</p>
+      </div>
+      <div hidden class="informacion2">
+        <h2>Pintar una región rectangular de un color utilizando el Contexto de HTML5.</h2>
+          <form class="form">
+            <label for="color"> Elegjr color: </label>
+                <button class="btn btn-secondary crear" type="button" name="button">Crear rectangulo</button>
+          </form>
+      </div>
+      <div hidden class="informacion3">
+        <h2>Pintar una región rectangular de un color utilizando la estructura de ImageData.</h2>
+      </div>
+      <div hidden class="informacion4">
+        <h2>Especificar la función para pintar un rectángulo utilizando un gradiente</h2>
+        <p>RGB(0,0,0) --> RGB (255,255,255)</p>
+      </div>
+      <div hidden class="informacion5">
+        <h2>Pintar un rectángulo en pantalla, utilizando un gradiente</h2>
+        <p> El gradiente debe ir de negro a amarillo en la primera
+          mitad del ancho del rectángulo, y de amarillo a rojo, en la segunda mitad. Por otro lado, en Y el
+          degrade se mantiene constante.</p>
+        </div>
+        <div hidden class="informacion6">
+          <h2>Cargar una Imagen desde disco o URL</h2>
+          <p>a.Dibujar la imagen dentro del canvas</p>
+          <p>b.Implementar una función que aplique el filtro de escala de grises y muestre el resultado en el canvas.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="./js/archivo.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </html>
