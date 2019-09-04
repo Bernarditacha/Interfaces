@@ -5,7 +5,7 @@ document.querySelector('.ejercicioCuatro').addEventListener("click", ejercicioCu
 document.querySelector('.ejercicioCinco').addEventListener("click", ejercicioCinco);
 document.querySelector('.ejercicioSeis').addEventListener("click", ejercicioSeis);
 
-// Variables constantes
+// Variables globales
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext("2d");
 
@@ -42,7 +42,7 @@ function ocultar(){
   boton.hidden = true;
 }
 
-//Rellenar fondos canvas
+//Rellenar fondo canvas
 function fondoCanvas() {
   ctx.fillStyle = "#808080";
   ctx.fillRect(0,0,width,height);
