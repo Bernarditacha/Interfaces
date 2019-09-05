@@ -8,7 +8,6 @@ document.querySelector('.ejercicioSeis').addEventListener("click", ejercicioSeis
 // Variables globales
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext("2d");
-
 let width=canvas.width;
 let height=canvas.height;
 
@@ -54,8 +53,9 @@ function ejercicioUno(){
   fondoCanvas();
   let html = document.querySelector('.informacion1');
   html.hidden = false;
-  let MAXFIL = 10;
-  let MAXCOL = 10;
+
+  let MAXFIL = 100;
+  let MAXCOL = 100;
   let matriz = [];
 
   function crearM() {
@@ -68,7 +68,7 @@ function ejercicioUno(){
   function cargarMatriz() {
     for(let x = 0; x<MAXFIL; x++){
       for (let j = 0; j <MAXCOL; j++) {
-        matriz [x][j] = Math.floor(Math.random()*20);
+        matriz [x][j] = Math.floor(Math.random()*99);
       }
     }
   }
@@ -78,7 +78,7 @@ function ejercicioUno(){
     let mayor=0;
     for (let i = 0; i <MAXFIL; i++) {
       for (let j = 0; j <MAXCOL; j++) {
-        if( matriz [i][j] > mayor){
+        if( (mayor==0)||matriz [i][j] > mayor){
           mayor = matriz [i][j];
         }
       }
@@ -131,11 +131,13 @@ function ejercicioUno(){
 
 
   crearM();
+  console.log("Matriz");
   console.log(matriz);
-  //  console.log(cargarMatriz());
-  //  console.log(matriz);
+  console.log("Valor maximo: ");
   console.log(valorMaximo());
+  console.log("Valor maximo segun filas pares y valor minimo segun filas impares: ");
   console.log(maxFilasParesMinFilasImpares());
+  console.log("Valor promedio segun filas: ");
   console.log(valorPromedio());
 }
 
