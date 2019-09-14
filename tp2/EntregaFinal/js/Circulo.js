@@ -48,7 +48,6 @@ class Circulo {
       return true;
     }
   }
-
   actualizar(x,y){
     this.coordenadaX = x;
     this.coordenadaY = y;
