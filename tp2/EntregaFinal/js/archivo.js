@@ -118,9 +118,7 @@ function desactivarTecla(e) {
 }
 
 
-
 document.querySelector(".cerrar").addEventListener("click", cerrarPoligono);
-
 canvas.addEventListener("mousewheel", cambiarColor);
 document.addEventListener("keydown", detectarTecla);
 document.addEventListener("keyup", desactivarTecla);
