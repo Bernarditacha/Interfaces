@@ -1,0 +1,337 @@
+*{
+  background-color: grey;
+}
+nav{
+  position: relative;
+  text-align: center;
+  margin-left: 33%;
+}
+.informacion{
+  text-align:center;
+  margin-top: 5px;
+  margin: auto;
+}
+.informacion, h2{
+  position:sticky;
+  font-size: 10px;
+  margin-top: 25px;
+}
+.informacion, p{
+  font-size: 15px;
+  font-weight: bold;
+}
+.cajas{
+  margin-left: 250px;
+
+}
+
+/* -- EJERCICIO 1 -- */
+.box1, .box2, .box3{
+  display:inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  border: 3px solid black;
+  margin-top: 50px;
+}
+.box1{
+  background-color: rgb(210,251,93);
+  transition: border 2s ease;
+}
+.box1:hover{
+  background-color: rgb(210,251,93);
+  border-radius:200px;
+  border:1px;
+}
+.box2{
+  background-color: rgb(93,251,206,250);
+  transition: transform 2s ease;
+}
+.box2:hover{
+  transform:rotate(90deg);
+  border:1px;
+}
+.box3{
+  background-color: rgb(252,125,19);
+  transition: all 2s ease;
+}
+.box3:hover{
+  transform:rotate(360deg);
+  border-radius:250px;
+  height:250px;
+  width:250px;
+  border: 4px #333;
+  background-color: rgb(252,19,146);
+}
+/* -- FIN EJERCICIO 1 -- */
+
+/* -- EJERCICIO 2 -- */
+.transform0{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+}
+.transform1{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: all 2s ease;
+  transform: skewY(20deg);
+}
+.transform2{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: all 2s ease;
+  transform:rotate(180deg);
+}
+.transform3{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: all 2s ease;
+  transform:skewX(20deg);
+}
+.transform4{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: all 2s ease;
+  transform: rotate(50deg);
+}
+.transform5{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: all 2s ease;
+  transform:skewX(45deg);
+}
+.transform6{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+  transform:skew(15deg,20deg);
+}
+.transform7{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+  transform: translate(50px, 150px);
+}
+.transform8{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+  transform:rotate(-40deg);
+}
+.transform9{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+  transform: scale(0.5, 0.5);
+}
+.transform10{
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid black;
+  background-color: rgb(177,255,65);
+  transition: transform 2s ease;
+  transform: translate(150px, 50px);
+}
+/* -- FIN EJERCICIO 2 -- */
+
+/* -- EJERCICIO 3 -- */ 
+/* CIRCULO DEL RELOJ */
+.box5{
+  margin-left: 200px;
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  /*background: url("../images/reloj.jpg");*/
+  border-radius: 200px;
+  border: 2px solid black;
+  background-color: #EAC3D8;
+}
+/* AGUJA DE SEGUNDOS */
+.box6{
+  height: 4px;
+  margin-top: 50%;
+  transform-origin: 100% 50%;
+  width: 50%;
+  background-color: black;
+  animation-duration: 60s;
+  animation-timing-function: steps(60,end);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: box6;
+}
+@keyframes box6 {
+  0%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(450deg);
+  }
+}
+/* AGUJA DE MINUTOS */
+.box7{
+  height: 5px;
+  margin-top:0%;
+  transform-origin: 100% 50%;
+  width: 50%;
+  background-color: black;
+  animation-duration: 3600s;
+  animation-timing-function: steps(3600,end);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: box7;
+}
+@keyframes box7 {
+  0%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* AGUJA DE HORAS */
+.box8{
+  height: 7px;
+  margin-top: 0%;
+  transform-origin: 100% 50%;
+  margin-left: 20%;
+  width: 30%;
+  background-color: black;
+  animation-duration: 43200s;
+  animation-timing-function: steps(43200,end);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: box8;
+}
+@keyframes box8 {
+  0%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* -- FIN EJERCICIO 3 -- */
+
+/* -- EJERCICIO 4 -- */
+/* DIV CONTENEDOR DEL SPRITE */
+.box9{
+  position: relative;
+  margin-top: 10px;
+  margin-right:20px;
+  margin-left: 95px;
+  border: 3px solid black;
+  width: 670px;
+  height: 550px;
+  background: url("../images/camino.jpg");
+  border-radius: 20px;
+}
+/* SPRITE SHEET */
+.imagen{
+  height: 156px;
+  width: 112px;
+  background: url("../images/caminando.png")0 0;
+  animation: walk 0.8s steps(6) infinite,
+  move 7s linear infinite;
+  position: relative;
+  bottom: -200px;
+}
+
+@keyframes walk {
+  /*Parto de la primer imagen del sprite sheet*/
+  0% { background-position:0 }
+  /*Hasta el tamaño total, en negativo para que no camine hacia atras*/
+  100% { background-position:-672px }
+}
+@keyframes move {
+  0% {left:0%;}
+  50% {left:80%; transform: translateX(0);}
+  100% { left:0%; transform: translateX(-672); }
+
+}
+/* -- FIN EJERCICIO 4 -- */
+
+/* -- EJERCICIO 5 -- */
+.box10{
+  position: relative;
+  margin-top: 20px;
+  width: 1500px;
+  height: 700px;
+}
+.imagen2{
+  height: 156px;
+  width: 112px;
+  background: url("../images/caminando.png")0 0;
+  animation: walk2 0.8s steps(6) infinite;
+  position: relative;
+}
+@keyframes walk2 {
+  /*Parto de la primer imagen del sprite sheet*/
+  0% { background-position:0 }
+  /*Hasta el tamaño total, en negativo para que no camine hacia atras*/
+  100% { background-position:-672px }
+}
+/* -- FIN EJERCICIO 5 -- */
