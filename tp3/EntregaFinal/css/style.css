@@ -25,11 +25,11 @@
 
   }
   .indicaciones p{
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 12px;
     font-weight: bold;
-    text-align: center;
-    color: black  
+    color: black ;
+    text-align: center;  
   }
   .puntaje, .tiempo{
     margin-left: 30px;
